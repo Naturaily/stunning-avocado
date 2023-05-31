@@ -1,0 +1,19 @@
+{
+  "name": "@natu/hooks",
+  "private": true,
+  "version": "0.0.0",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "license": "MIT",
+  "scripts": {
+    "eslint:format": "eslint src --fix"
+  },
+  "devDependencies": {
+    "@natu/jest-config": "*",
+    "eslint-config-custom": "*",
+    "tsconfig": "*"
+  },
+  "dependencies": {
+    "@natu/ui": "*"
+  }
+}

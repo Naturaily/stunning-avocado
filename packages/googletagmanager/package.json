@@ -1,0 +1,21 @@
+{
+  "name": "@natu/googletagmanager",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "license": "MIT",
+  "scripts": {
+    "eslint:format": "eslint src --fix",
+    "test": "echo \"jest test\"",
+    "test:coverage": "echo \"jest --coverage\"",
+    "test:ci": "echo \"jest --ci\"",
+    "test:watch": "echo \"jest --watch\""
+  },
+  "devDependencies": {
+    "@natu/jest-config": "*",
+    "@natu/utils": "*",
+    "eslint-config-custom": "*",
+    "tsconfig": "*"
+  }
+}

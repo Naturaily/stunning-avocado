@@ -1,0 +1,12 @@
+query getContentNode($slug: ID!, $resolveRelations: String = "", $skipContent: Boolean = false) {
+  ContentNode(id: $slug, resolve_relations: $resolveRelations) {
+    id
+    first_published_at
+    full_slug
+    name
+    published_at
+    slug
+    uuid
+    content @skip(if: $skipContent)
+  }
+}

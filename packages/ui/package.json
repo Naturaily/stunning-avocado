@@ -1,0 +1,40 @@
+{
+  "name": "@natu/ui",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "license": "MIT",
+  "files": [
+    "index.ts"
+  ],
+  "scripts": {
+    "eslint:format": "eslint src --fix",
+    "test": "jest test",
+    "test:coverage": "jest --coverage",
+    "test:ci": "jest --ci",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "@babel/core": "7.22.1",
+    "@natu/jest-config": "*",
+    "@types/node": "20.2.5",
+    "@types/react": "18.2.7",
+    "@types/react-dom": "^18.0.11",
+    "eslint-config-custom": "*",
+    "tailwind-config": "*",
+    "tsconfig": "*"
+  },
+  "dependencies": {
+    "@natu/next-link": "*",
+    "@natu/responsive-image": "*",
+    "@natu/utils": "*",
+    "@heroicons/react": "2.0.18",
+    "@hookform/resolvers": "3.1.0",
+    "downshift": "7.6.0",
+    "framer-motion": "10.12.16",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "7.44.1"
+  }
+}

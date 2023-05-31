@@ -1,0 +1,54 @@
+{
+  "name": "turborepo-boilerplate",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "storyblok/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "test": "turbo run test",
+    "test:coverage": "turbo run test:coverage",
+    "test:ci": "turbo run test:ci",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "prettier:format": "prettier --write .",
+    "prettier:check": "prettier --check \"**/*.{ts,tsx,json}\"",
+    "eslint:format": "turbo run eslint:format",
+    "prepare": "husky install",
+    "storybook": "yarn workspace @natu/storybook-ui storybook",
+    "storybook:build": "yarn workspace @natu/storybook-ui storybook:build",
+    "codegen": "turbo run codegen"
+  },
+  "devDependencies": {
+    "eslint-config-custom": "*",
+    "husky": "8.0.3",
+    "lint-staged": "13.2.2",
+    "prettier": "latest",
+    "tsconfig": "*",
+    "turbo": "1.9.9"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "packageManager": "yarn@1.22.19",
+  "lint-staged": {
+    "apps/**/*": [
+      "yarn prettier:format",
+      "eslint --fix"
+    ],
+    "packages/**/*": [
+      "yarn prettier:format",
+      "eslint --fix"
+    ],
+    "storyblok-ui/**/*": [
+      "yarn prettier:format",
+      "eslint --fix"
+    ],
+    "*.json": [
+      "yarn prettier:format"
+    ]
+  }
+}

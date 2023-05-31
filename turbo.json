@@ -1,0 +1,44 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", ".next/**"],
+      "env": [
+        "NODE_ENV",
+        "NEXT_PUBLIC_STORYBLOK_API_URL",
+        "NEXT_PUBLIC_STORYBLOK_TOKEN",
+        "NEXT_PUBLIC_STORYBLOK_TOKEN_VERSION",
+        "NEXT_PUBLIC_STORYBLOK_APP_NAME",
+        "NEXT_PUBLIC_STORYBLOK_NOT_FOUND_PATH",
+        "NEXT_PUBLIC_STORYBLOK_HEADER_PATH",
+        "NEXT_PUBLIC_STORYBLOK_FOOTER_PATH",
+        "NEXT_PUBLIC_STORYBLOK_EXCLUDED_FOLDERS",
+        "SKIP_ENV_VALIDATION",
+        "NEXT_PUBLIC_APP_DOMAIN",
+        "NEXT_PUBLIC_GTM_ID"
+      ]
+    },
+    "eslint:format": {
+      "outputs": []
+    },
+    "dev": {
+      "cache": false
+    },
+    "test": {
+      "dependsOn": ["^build"],
+      "outputs": ["coverage/**"]
+    },
+    "test:coverage": {
+      "dependsOn": ["^build"],
+      "outputs": ["coverage/**"]
+    },
+    "test:ci": {
+      "dependsOn": ["^build"],
+      "outputs": ["coverage/**"]
+    },
+    "codegen": {
+      "cache": false
+    }
+  }
+}

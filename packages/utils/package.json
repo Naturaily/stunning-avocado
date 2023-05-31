@@ -1,0 +1,30 @@
+{
+  "name": "@natu/utils",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "license": "MIT",
+  "files": [
+    "index.ts"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "eslint:format": "eslint src --fix",
+    "test": "jest test",
+    "test:coverage": "jest --coverage",
+    "test:ci": "jest --ci",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "eslint-config-custom": "*",
+    "tsconfig": "*"
+  },
+  "dependencies": {
+    "encoding": "0.1.13",
+    "tailwind-merge": "1.12.0",
+    "zod": "3.21.4"
+  }
+}

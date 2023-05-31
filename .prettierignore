@@ -1,0 +1,12 @@
+node_modules
+.next
+dist
+yarn.lock
+public 
+coverage
+.gitkeep
+*.hbs
+storybook-static
+.env.example
+migrations
+favicon.ico

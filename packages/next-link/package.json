@@ -1,0 +1,19 @@
+{
+  "name": "@natu/next-link",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "license": "MIT",
+  "files": [
+    "index.ts"
+  ],
+  "scripts": {
+    "eslint:format": "eslint src --fix"
+  },
+  "devDependencies": {
+    "@natu/jest-config": "*",
+    "eslint-config-custom": "*",
+    "tsconfig": "*"
+  }
+}

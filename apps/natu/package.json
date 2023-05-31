@@ -1,0 +1,16 @@
+{
+  "name": "natu",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@natu/env": "*",
+    "@natu/storyblok-page-compositions": "*",
+    "next": "13.4.4"
+  }
+}

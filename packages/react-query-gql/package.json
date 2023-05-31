@@ -1,0 +1,33 @@
+{
+  "name": "@natu/react-query-gql",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "license": "MIT",
+  "files": [
+    "index.ts"
+  ],
+  "scripts": {
+    "eslint:format": "eslint src --fix"
+  },
+  "devDependencies": {
+    "@graphql-codegen/add": "5.0.0",
+    "@graphql-codegen/cli": "4.0.0",
+    "@graphql-codegen/typescript": "4.0.0",
+    "@graphql-codegen/typescript-graphql-request": "5.0.0",
+    "@graphql-codegen/typescript-operations": "4.0.0",
+    "@graphql-codegen/typescript-react-query": "4.1.0",
+    "@natu/jest-config": "*",
+    "cross-env": "7.0.3",
+    "eslint-config-custom": "*",
+    "tsconfig": "*"
+  },
+  "dependencies": {
+    "@natu/ui": "*",
+    "@tanstack/react-query": "4.29.11",
+    "@tanstack/react-query-devtools": "4.29.11",
+    "graphql": "16.6.0",
+    "graphql-request": "6.1.0"
+  }
+}
