@@ -28,7 +28,7 @@
     "lint-staged": "13.2.2",
     "prettier": "latest",
     "tsconfig": "*",
-    "turbo": "1.9.9"
+    "turbo": "1.10.2"
   },
   "engines": {
     "node": ">=16.0.0"
