@@ -20,6 +20,6 @@
   },
   "dependencies": {
     "@natu/utils": "*",
-    "@t3-oss/env-nextjs": "0.3.1"
+    "@t3-oss/env-nextjs": "0.6.0"
   }
 }
