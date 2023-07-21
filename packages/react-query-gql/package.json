@@ -26,7 +26,7 @@
   "dependencies": {
     "@natu/ui": "*",
     "@tanstack/react-query": "4.29.11",
-    "@tanstack/react-query-devtools": "4.29.11",
+    "@tanstack/react-query-devtools": "4.32.0",
     "graphql": "16.6.0",
     "graphql-request": "6.1.0"
   }
